@@ -28,3 +28,37 @@ Unity游戏开发的快速开启框架
 - [x] [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676)
 - [x] [UniRx](https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extensions-for-unity-17276)
 - [x] [RestClient](https://assetstore.unity.com/packages/tools/network/rest-client-for-unity-102501)
+
+## 工具类
+
+### 通用工具类
+
+通用工具类在`Assets/Scripts/Utils`目录下
+
+``` shell
+.
+├── Expand.cs # 扩展方法
+├── IntervalRequest.cs # 间隔请求
+├── ObjectPool.cs # 对象池
+├── ResourceLoader.cs # 资源加载器
+└── SceneSwitcher.cs # 场景切换器
+```
+
+### 事件管理器
+
+事件管理器在`Assets/Scripts/Event`目录下
+
+``` shell
+.
+├── EventCenter.cs # 事件中心
+└── eNventType.cs # 事件类型
+```
+
+### 通用基类
+
+通用基类在`Assets/Scripts/BaseClass`目录下
+
+``` shell
+.
+└── Singleton.cs # 单例基类
+```
