@@ -25,9 +25,9 @@ Unity游戏开发的快速开启框架
 
 ## 插件列表
 
-- [x] [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676)
-- [x] [UniRx](https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extensions-for-unity-17276)
-- [x] [RestClient](https://assetstore.unity.com/packages/tools/network/rest-client-for-unity-102501)
+- [x] [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676) - 补间动画工具
+- [x] [UniRx](https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extensions-for-unity-17276) - 响应式编程工具
+- [x] [RestClient](https://assetstore.unity.com/packages/tools/network/rest-client-for-unity-102501) - RESTful API工具
 
 ## 工具类
 
@@ -41,7 +41,9 @@ Unity游戏开发的快速开启框架
 ├── IntervalRequest.cs # 间隔请求
 ├── ObjectPool.cs # 对象池
 ├── ResourceLoader.cs # 资源加载器
-└── SceneSwitcher.cs # 场景切换器
+├── SceneSwitcher.cs # 场景切换器
+├── AudioManager.cs # 音频管理器
+└── SaveLoadManager # 数据保存与加载管理器
 ```
 
 ### 事件管理器
