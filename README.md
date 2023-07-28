@@ -4,6 +4,9 @@ Unity游戏开发的快速开启框架
 
 ## Assets结构
 
+Assets文件夹下的文件结构如下，因git不支持空文件夹导致空文件夹缺失，如需在项目中快速创建可点击`Tools->创建本地文件夹`
+可以创建这些文件夹
+
 ``` shell
 .
 ├── Animations # 此文件夹存放所有的动画文件和动画控制器
@@ -26,7 +29,8 @@ Unity游戏开发的快速开启框架
 ## 插件列表
 
 - [x] [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676) - 补间动画工具
-- [x] [UniRx](https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extensions-for-unity-17276) - 响应式编程工具
+- [x] [UniRx](https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extensions-for-unity-17276) -
+  响应式编程工具
 - [x] [RestClient](https://assetstore.unity.com/packages/tools/network/rest-client-for-unity-102501) - RESTful API工具
 
 ## 工具类
