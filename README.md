@@ -12,6 +12,7 @@ Assets文件夹下的文件结构如下，因git不支持空文件夹导致空�
 ├── Animations # 此文件夹存放所有的动画文件和动画控制器
 ├── Audio # 此文件夹用于存放音频文件，如音效和背景音乐
 ├── Editor # 这个文件夹用于存放编辑器脚本，这些脚本只在Unity编辑器中运行
+├── Fonts # 此文件夹用于存放字体文件
 ├── Materials # 这个文件夹用于存放材质文件，这些文件用于定义物体的表面属性
 ├── Models # 此文件夹存放所有的3D模型
 ├── Plugins # 这个文件夹用于存放Unity项目所需的各种插件
@@ -28,10 +29,12 @@ Assets文件夹下的文件结构如下，因git不支持空文件夹导致空�
 
 ## 插件列表
 
-- [x] [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676) - 补间动画工具
-- [x] [UniRx](https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extensions-for-unity-17276) -
-  响应式编程工具
-- [x] [RestClient](https://assetstore.unity.com/packages/tools/network/rest-client-for-unity-102501) - RESTful API工具
+- [x] DOTween - 补间动画工具
+- [x] UniRx - 响应式编程工具
+- [x] RestClient - RESTful API工具
+- [x] TextMesh Pro - 文本工具
+- [x] UI Toolkit - UI工具
+- [x] Newtonsoft Json - Json工具
 
 ## 工具类
 
@@ -45,7 +48,6 @@ Assets文件夹下的文件结构如下，因git不支持空文件夹导致空�
 ├── IntervalRequest.cs # 间隔请求
 ├── ObjectPool.cs # 对象池
 ├── ResourceLoader.cs # 资源加载器
-├── SceneSwitcher.cs # 场景切换器
 ├── AudioManager.cs # 音频管理器
 └── SaveLoadManager # 数据保存与加载管理器
 ```

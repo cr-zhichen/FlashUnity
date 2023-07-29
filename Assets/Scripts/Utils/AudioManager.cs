@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,11 @@ public class AudioManager : Singleton<AudioManager>
     /// 音效
     /// </summary>
     private Dictionary<string, AudioClip> sfxClips = new Dictionary<string, AudioClip>();
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
 
     /// <summary>
     /// 添加音乐

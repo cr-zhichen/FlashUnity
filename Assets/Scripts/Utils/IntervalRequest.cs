@@ -22,6 +22,11 @@ public class IntervalRequest : Singleton<IntervalRequest>
     // 每个委托调用之间的延迟
     public float delayBetweenInvocations = 0.001f;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     private void Start()
     {
         StartCoroutine(Timer(defaultSeconds));

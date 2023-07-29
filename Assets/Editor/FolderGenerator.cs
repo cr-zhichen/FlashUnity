@@ -30,6 +30,7 @@ public class FolderGenerator
         Directory.CreateDirectory(path + "/Plugins");
         Directory.CreateDirectory(path + "/UI");
         Directory.CreateDirectory(path + "/Shaders");
+        Directory.CreateDirectory(path + "/Fonts");
 
         AssetDatabase.Refresh();
 

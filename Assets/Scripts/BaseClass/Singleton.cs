@@ -19,9 +19,6 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
                     GameObject singletonObject = new GameObject();
                     _instance = singletonObject.AddComponent<T>();
                     singletonObject.name = typeof(T) + " (Singleton)";
-
-                    // 确保singleton实例跨场景持久存在
-                    DontDestroyOnLoad(singletonObject);
                 }
             }
 
