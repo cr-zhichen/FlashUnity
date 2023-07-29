@@ -19,11 +19,6 @@ public class AudioManager : Singleton<AudioManager>
     /// </summary>
     private Dictionary<string, AudioClip> sfxClips = new Dictionary<string, AudioClip>();
 
-    void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
     /// <summary>
     /// 添加音乐
     /// </summary>

@@ -16,9 +16,15 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
                 _instance = (T)FindObjectOfType(typeof(T));
                 if (_instance == null)
                 {
-                    Debug.LogError("场景中需要一个 " + typeof(T) + " 的实例，但没有找到");
+                    GameObject singletonObject = new GameObject();
+                    _instance = singletonObject.AddComponent<T>();
+                    singletonObject.name = typeof(T) + " (Singleton)";
+
+                    // 确保singleton实例跨场景持久存在
+                    DontDestroyOnLoad(singletonObject);
                 }
             }
+
             return _instance;
         }
     }

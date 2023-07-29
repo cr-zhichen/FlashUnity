@@ -2,29 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UniRx;
 using UnityEngine;
 
 /// <summary>
 /// 定时器请求
 /// </summary>
-public class IntervalRequest : MonoBehaviour
+public class IntervalRequest : Singleton<IntervalRequest>
 {
-    private static IntervalRequest _instance;
-
-    public static IntervalRequest Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                var go = new GameObject("IntervalRequest");
-                _instance = go.AddComponent<IntervalRequest>();
-            }
-
-            return _instance;
-        }
-    }
-
     // 定义一个事件，当定时结束后触发
     public event Action OnTimeElapsed;
 
@@ -37,30 +22,9 @@ public class IntervalRequest : MonoBehaviour
     // 每个委托调用之间的延迟
     public float delayBetweenInvocations = 0.001f;
 
-    private void Awake()
-    {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-
-        _instance = this;
-        DontDestroyOnLoad(this.gameObject);
-    }
-
-    private void OnDestroy()
-    {
-        if (_instance == this)
-        {
-            _instance = null;
-        }
-    }
-
     private void Start()
     {
         StartCoroutine(Timer(defaultSeconds));
-        //Debug.Log("IntervalRequest Start");
     }
 
     public IEnumerator Timer(float seconds)
