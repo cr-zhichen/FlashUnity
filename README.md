@@ -35,6 +35,7 @@ Assets文件夹下的文件结构如下，因git不支持空文件夹导致空�
 - [x] TextMesh Pro - 文本工具
 - [x] UI Toolkit - UI工具
 - [x] Newtonsoft Json - Json工具
+- [x] Graphy - 性能监控工具
 
 ## 工具类
 
