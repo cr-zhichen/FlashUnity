@@ -1,0 +1,35 @@
+/*****************************************
+
+    文件：#SCRIPTNAME#.cs
+    作者：#AUTHOR#
+    日期：#CREATETIME#
+    描述：#DESCRIPTION#
+
+******************************************/
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+/// <summary>
+/// #FUNCTION#
+/// </summary>
+public class #SCRIPTNAME# : MonoBehaviour
+{
+    #region 变量
+
+    // TODO 这里写变量
+
+    #endregion
+
+    #region Unity生命周期
+    
+    // TODO 这里写生命周期函数
+    
+    #endregion
+
+    #region 方法
+
+    // TODO 这里写方法
+
+    #endregion
+}
